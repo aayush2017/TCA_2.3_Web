@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	
+	background: #60db0c;
+	padding: 1%;
+}
+.box-img {
+
+	border: 1px solid #d71515;
+	box-shadow: 0 0 5px #000;
+	width: 33.33%;
+	float: left;
+}
+.box-img img {
+
+	width: 100%;
+}
+footer {
+	
+	background: aquamarine;
+	padding: 1%;
+	clear: both;
+}
