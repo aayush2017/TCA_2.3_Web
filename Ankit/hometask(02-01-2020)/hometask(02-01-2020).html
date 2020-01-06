@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>before and after tag</title>
+<style>
+	h1::before {
+        content: "hover here";
+        border-top: 2px solid black;
+	}
+	h1:hover::before{
+		background-color: red;
+		color: blue;
+		border-bottom: 8px solid green;
+		content: "thats what i am talking about";
+	}
+</style>	
+</head>
+<body>
+<div>
+	<h1 style="margin: 313px;width:25%; ">HTML</h1>	
+</div>
+</body>
+</html>
