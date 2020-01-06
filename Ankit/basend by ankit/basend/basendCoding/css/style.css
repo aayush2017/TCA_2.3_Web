@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Header start*/
+header {
+	background-image: url("../img/background-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	overflow: hidden;
+}
+#menustrip {
+	background-color: rgba(0,0,0,.6);
+	overflow: hidden;
+	padding: 1% 0 1% 0;
+}
+.mltr {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#logo {
+	float: left;
+	color: #fff;
+}
+#menu {
+	float: right;
+}
+#menu a {
+	text-decoration: none;
+	color: #fff;
+}
+#header-box {
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: #fff;
+}
+#header-layer {
+	
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.3);
+}
