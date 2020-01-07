@@ -2,7 +2,7 @@ header{
 
 }
 .ul1 {
-  list-style-type: none;
+  /*! list-style-type: none; */
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -13,14 +13,14 @@ header{
 .li1 {
   float: left;	
   display: block;
-  color: white;
-  text-align: center;
+  /*! color: white; */
+  /*! text-align: center; */
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .li1:hover:not(.active) {
-  background-color:black;
+  background-color:yellowgreen;
 }
 
 .active {
@@ -50,4 +50,25 @@ header{
 .div1{
 	float: left;
 	width: 70%;
+}
+.button{
+	  float: left;	
+  display: block;
+  /*! color: white; */
+  /*! text-align: center;*/
+  padding: 14px 16px;
+  text-decoration: none;
+  overflow: visible;
+}
+.dropdown{
+  display: none;
+  background-color: white;
+  
+}
+.dropdown-content{
+	list-style-type: none;
+  background-color: white ;
+}
+.a:hover .dropdown{
+	display: block;
 }
