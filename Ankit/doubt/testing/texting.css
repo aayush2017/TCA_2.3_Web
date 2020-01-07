@@ -11,7 +11,7 @@ header{
 }
 
 .li1 {
-  float: left;	
+  float: left;  
   display: block;
   /*! color: white; */
   /*! text-align: center; */
@@ -31,12 +31,6 @@ header{
   margin: 0;
   padding: 0;
   background-color: rgba(0,0,0,0.2);
-  position: fixed;
-  left: 2;
-  overflow: auto;
-  float: left;
-  width: 15%;
-  height: 100%"                                                                                                                                                                                                         
   
 }
 .li2{
@@ -48,11 +42,12 @@ header{
   background-color: grey;
 }
 .div1{
-	float: left;
-	width: 70%;
+  width: 70%;
+  position: absolute;
+  left: 22%;
 }
 .button{
-	  float: left;	
+    float: left;  
   display: block;
   /*! color: white; */
   /*! text-align: center;*/
@@ -66,9 +61,16 @@ header{
   
 }
 .dropdown-content{
-	list-style-type: none;
+  list-style-type: none;
   background-color: white ;
 }
 .a:hover .dropdown{
-	display: block;
+  display: block;
+}
+#sideBar {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  overflow: scroll;
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+<style>
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#menu {
+	background-color: black;
+	color: #840d0d;
+	padding: 0 1%;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	background: #000;
+	overflow: hidden;
+	list-style: none;
+}
+#menu ul li {
+	margin-right: 0%;
+	padding: 1%;
+	float: left;
+}
+#menu ul li:hover {
+	
+	background: green;
+}
+#menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+#menu ul li ul {
+	display: none;
+	position: absolute;
+	left: 6%;
+	top: 11%;
+	width: 10%;
+}
+#menu ul li:hover ul {
+	display: block;
+}
+#menu ul li ul li a {
+	display: block;
+}
+</style>
+</head>
+<body>
+<div id="menu">
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">Electronic</a>
+			<ul>
+				<li><a href="">Mobile</a></li>
+				<li><a href="">PC</a></li>
+			</ul>
+		</li>
+		<li><a href="">Clothes</a>
+			<ul>
+				<li><a href="">Man</a></li>
+				<li><a href="">Woman</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
