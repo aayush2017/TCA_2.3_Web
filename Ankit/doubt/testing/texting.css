@@ -1,74 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
 header{
+	border: 1px solid black;
+	padding: 15px 10px;
 
 }
-.ul1 {
-  /*! list-style-type: none; */
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(0,0,0,0.5);
+nav{
+	
+}
+.ul1{
+list-style-type: none;
+background-color: gray;
+overflow: hidden;
+padding: 0px 20px;	
+border: 1px solid black;
+position: sticky;
+top: 0px;	
 
 }
-
-.li1 {
-  float: left;	
-  display: block;
-  /*! color: white; */
-  /*! text-align: center; */
-  padding: 14px 16px;
-  text-decoration: none;
+.li1{
+	float: left;
+	padding: 17px 6px;
+	font-size: 25px
 }
-
-.li1:hover:not(.active) {
-  background-color:yellowgreen;
+.li1:hover{
+	background-color: green;
 }
-
-.active {
-  background-color:green;
+aside{
+	position: fixed
 }
 .ul2{
-   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0,0,0,0.2);
-  position: fixed;
-  left: 2;
-  overflow: auto;
-  float: left;
-  width: 15%;
-  height: 100%"                                                                                                                                                                                                         
-  
+background-color: grey;
+	height: 600px;
+	overflow: auto
+
 }
 .li2{
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+font-size:25px;
+list-style-type: none;
+width: 100%;
+padding: 2px 80px	2px 10px;
 }
 .li2:hover{
-  background-color: grey;
+	background-color: green;
 }
-.div1{
-	float: left;
-	width: 70%;
-}
-.button{
-	  float: left;	
-  display: block;
-  /*! color: white; */
-  /*! text-align: center;*/
-  padding: 14px 16px;
-  text-decoration: none;
-  overflow: visible;
-}
-.dropdown{
-  display: none;
-  background-color: white;
-  
-}
-.dropdown-content{
-	list-style-type: none;
-  background-color: white ;
-}
-.a:hover .dropdown{
-	display: block;
+section	{
+
+	position: relative;
+	left: 11%;
+	top: 20%;
+	overflow: auto;
+
 }
