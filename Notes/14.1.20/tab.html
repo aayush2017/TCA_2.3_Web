@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab</title>
+<style>
+#tab {
+
+}
+#tab-button {
+
+}
+#tab-button label {
+	display: inline-block;
+	padding: 1%;
+	background: green;
+	color: #fff;
+	cursor: pointer;
+}
+#tab input[type='radio'] {
+	
+}
+#c1 { display: none; }
+#c2 { display: none; }
+#c3 { display: none; }
+#tab-content1 { display: none; }
+#tab-content2 { display: none; }
+#tab-content3 { display: none; }
+
+#c1:checked ~ #tab-content1 { display: block; }
+#c2:checked ~ #tab-content2 { display: block; }
+#c3:checked ~ #tab-content3 { display: block; }
+
+</style>
+</head>
+<body>
+<div id="tab">
+	<div id="tab-button">
+		<label for="c1">Home</label>
+		<label for="c2">About</label>
+		<label for="c3">Contact</label>
+	</div>
+	<input type="radio" name="ck" id="c1" checked="">
+	<div id="tab-content1">
+		<h1>Tab 1</h1>
+		<img src="img/1.jpg">
+	</div>
+	<input type="radio" name="ck" id="c2">
+	<div id="tab-content2">
+		<h1>Tab 2</h1>
+		<form>
+			<label>Fullname <input type="text" name=""></label>
+		</form>
+	</div>
+	<input type="radio" name="ck" id="c3">
+	<div id="tab-content3">
+		<h1>Tab 3</h1>
+	</div>
+</div>
+
+</body>
+</html>
