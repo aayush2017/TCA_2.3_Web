@@ -1,0 +1,26 @@
+.div1{
+ position: relative;
+ top: 0px; 
+ width: 70%;
+}
+.div2{ 
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  transition:height .4s;
+}
+.div2 h1{
+  margin:0px ;
+  font-size: 85px;
+  color: rgba(0,0,0,0)  
+}
+.div1:hover .div2{
+    background-color: rgba(0,0,0,0.5);
+    height: 599px; 
+}.div1:hover .div2 h1{
+  	margin: 188px;
+    color: rgba(255,255,255,1);
+  transition:margin .8s ;
+}
