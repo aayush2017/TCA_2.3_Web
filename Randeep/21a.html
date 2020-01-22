@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+<label>Username<input type="text" name="" Id="unm"></label>
+<label>Password<input type="password" name=""Id="psw"></label>
+<button onclick="access()">Login</button>
+
+<script>
+	
+	function access() {
+		var unm, psw;
+		var unm = document.getElementById('unm');
+		var psw = document.getElementById('psw');
+		
+		if (unm.value == "John" && psw.value == "Carter") alert("Correct login details")
+	else alert("Incorrect details")}
+
+</script>
+
+<pre>
+<label>a<input type="text" name="" Id="a"></label> <label>b<input type="text" name="" Id="b"></label>     <button onclick="plusvalue()">Check</button></pre>
+
+<h3>Result:
+
+<div class="res"> <p> Hello</p></div></h3>
+
+<script>
+function plusvalue(){
+	var a = document.getElementById('a')
+	var b = document.getElementById('b')
+	var res = document.getElementById('res')
+c = parseInt(a.value) + parseInt(b.value)
+
+// console.log(c)}
+// alert("Sum is " + c)}
+// document.write(c)}
+alert(res.innerHTML);}
+
+
+</script>
+
+</body>
+</html>
