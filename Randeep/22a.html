@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+	<label>Full name<input type="text" name="" id="fn"></label>
+	<label>Username<input type="text" name="" id="un"></label>
+	<button onclick="form()">Submit</button>
+<script>
+	
+function form() {
+	var fn, un;
+	fn = document.getElementById('fn');
+	un = document.getElementById('un');
+if (fn.value == "") {alert("Please enter your Full name");
+fn.focus();
+fn.style = "background-color: red; text: blue;"
+}
+
+else if (un.value == "") {alert("Please enter the Username");
+un.focus();
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
