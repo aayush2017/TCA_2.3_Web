@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form for input</title>
+	<meta charset="utf-8">
+<style>
+	.bg_text{
+		background-color: yellow:
+		color:brown;
+		border-left: 7px solid black;
+	}
+</style>
+</head>
+<body>
+<label>Fullname<input type="text" name="" id="fullnm1"></label>
+<label>username <input type="text" name="" id="username"></label>
+<button onclick="validateBox()">Submit</button>
+
+<script>
+function validateBox() {
+	var fullnm2 = document.getElementById('fullnm1');
+	var username = document.getElementById('username');
+	if (fullnm2.value == "" ) {
+		<label>Please enter Fullname</label>
+		fullnm2.focus();
+		fullnm2.className = "bg_text";
+	} else 	if (username.value == "" ) {
+		<label>Please enter username</label>
+		username.focus();
+		username.className = "bg_text";
+	}
+}
+</script>></button>
+</body>
+</html>
