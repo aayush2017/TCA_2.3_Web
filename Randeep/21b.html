@@ -6,25 +6,24 @@
 
 </head>
 <body>
-	<label>Date of birth <input type="" name="" Id="ate"> </label>
-<label>Month of birth <input type="" name="" Id="Month"> </label>
-<label>Year of birth<input type="" name="" Id="Year"></label>
+	<label>Date of birth <input type="text" name="" Id="ate"> </label>
+<label>Month of birth <input type="text" name="" Id="Month"> </label>
+<label>Year of birth<input type="text" name="" Id="Year"></label>
+<label>DOB <input type="date" name="" id="dob"></label>
 <button onclick="age()">Check age</button>
 
 
 <script>
 function age() {
-	var ate, Month, Year;
-	var ate = document.getElementById('ate');
-	var Month = document.getElementById('Month');
-	var Year = document.getElementById('Year');
-c = "3000" - parseInt(Year.value);
-d = "2019" - parseInt(c.value);}{
-alert("Thanks for updating your age: " + d);
+	var ate, Month, Year, c, d;
+	ate = document.getElementById('ate');
+	Month = document.getElementById('Month');
+	Year = document.getElementById('Year');
+
+	c = 4000 - parseInt(Year.value);
+	d = 2048 - parseInt(c);
+	alert("Thanks for updating your age: " + d);
 }
-
-
-
 </script>
 </body>
 </html>
