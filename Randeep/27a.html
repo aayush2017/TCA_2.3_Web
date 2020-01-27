@@ -2,38 +2,35 @@
 <html>
 <head>
 	<title>Form</title>
+<style>
+.brd {
+	background-color: pink; color: brown; border-left: 5px solid black
+}
+</style>
 </head>
 <body>
 
-	<label>Fullname<input type="text" name="" id="fn"><p id="efn">Please enter your full name</p></label>
+<label>Fullname<input type="text" name="" id="fn"><p id="efn">Please enter your full name</p></label>
 <br/>
 <br/>
 <label>Username<input type="text" name="" id="un"><p id="eun">Please enter your Username</p></label>
 <button onclick="Submit()">Submit</button>
 
 <script>
-	function Submit(){
-		var fn1, un1, efn1, eun1;
-		fn1 = document.getElementById('fn');
-		un1 = document.getElementById('un');
-		efn1 = document.getElementById('efn');
-		eun1 = document.getElementById('eun');
+function Submit(){
+	var fn1, un1, efn1, eun1;
+	fn1 = document.getElementById('fn');
+	un1 = document.getElementById('un');
+	efn1 = document.getElementById('efn');
+	eun1 = document.getElementById('eun');
 
-if (fn1.value == "") {
-efn1.style = "display: block"
-efn1.innerhtml = "Please enter full name"
-un.focus()
-un.classname = background coror: pink; color: brown; border-left: 5px solid black;	
+	if (fn1.value == "") {
+		efn1.style = "display: block";
+		efn1.innerHTML = "Please enter full name";
+		fn1.focus();
+		fn1.className = "brd";	
+	}
 }
-
-
-			}
-
-
-
-
 </script>
-
-
 </body>
 </html>
