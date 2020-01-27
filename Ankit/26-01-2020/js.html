@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>java script</title>
+	<script type="text/javascript"
+	src="js.js"></script>
+</head>
+<body>
+<h1>validation example</h1>	
+<label> put numbers between 5 to 15 </label><br><br> 
+<input type="text" name="" id ="inp">	
+<button onclick="abc()">click</button>
+<p id="msg"></p>
+<p><b>NOTE :</b> please try empty input ,alphabets,numeric except 5 - 15 which let the program to show error message. </p>
+
+<script>
+function abc() {
+var inp = document.getElementById('inp').value;
+try {
+if (inp == "") throw "empty";
+if (isNaN(inp)) throw "not a number";
+if (inp < 5) throw "too low";
+if (inp > 15) throw "too high";
+else {
+		window.alert("successful");
+        document.getElementById('msg').innerHTML = "successful" ;
+	}
+}
+catch(err){
+	document.getElementById('msg').innerHTML = "the input value is " + err;
+}
+}
+
+</script>
+</body>
+</html>	
