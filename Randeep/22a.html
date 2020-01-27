@@ -4,24 +4,30 @@
 	<title>Form</title>
 </head>
 <body>
+
 	<label>Full name<input type="text" name="" id="fn"></label>
 	<label>Username<input type="text" name="" id="un"></label>
-	<button onclick="formName()">Submit</button>
+	<button onclick="formm()">Submit</button>
 <script>
 	
-function formName() {
+function formm() {
 	var fn, un;
 	fn = document.getElementById('fn');
 	un = document.getElementById('un');
-	if (fn.value == "") {
-		alert("Please enter your Full name");
-		fn.focus();
-		fn.style = "background-color: red; color: blue;"
-	} else if (un.value == "") {
-		alert("Please enter the Username");
-		un.focus();
-	}
+if (fn.value == "") {alert("Please enter your Full name");
+fn.focus();
+fn.style = "background-color: red; color: blue;"
 }
+
+else if (un.value == "") {alert("Please enter the Username");
+un.focus();
+}
+}
+
+
+
+
+
 </script>
 
 </body>
