@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code for loop</title>
+<style>
+.slider{width: 35%;}
+.slider-img{}
+.slider-img img{width: 100%; }
+</style>
+</head>
+<body>
+<div class="slider">
+	<div class="slider-img">
+		<img src="img/1.jpg"/>
+	</div>
+	<div class="slider-img">
+		<img src="img/2.jpg"/>
+	</div>
+	<div class="slider-img">
+		<img src="img/3.jpg"/>
+	</div>
+	<div class="slider-img">
+		<img src="img/4.jpg"/>
+	</div>
+<button onclick="moveSlider(imgPos-1)">Pre</button>
+<button onclick="moveSlider(1)">1</button>
+<button onclick="moveSlider(2)">2</button>
+<button onclick="moveSlider(3)">3</button>
+<button onclick="moveSlider(4)">4</button>
+<button onclick="moveSlider(imgPos+1)">Next</button>
+</div>
+<script>
+var imgPos=1;
+moveSlider(imgPos);
+function moveSlider(imgNum){
+	var si=document.getElementsByClassName('slider-img');
+	// alert(imgNum);
+	if (imgNum >si.length){
+		//imgNum=1;
+		alert("This is last image");
+	}	
+	if (imgNum <=0) {
+		//imgNum=si.length;
+		alert("This is first image");
+	}
+	for (var i = 0; i <= si.length; i++) {
+		si[i].style="display:none";
+		si[imgNum-1].style="display:block";
+		imgPos=imgNum;
+	}
+}
+</script>
+</body>
+</html>
