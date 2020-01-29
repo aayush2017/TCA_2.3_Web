@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>java script</title>
+<style>
+.maindiv{
+	width: 33.33%;
+}
+.slider img {
+	width: 100%;
+}
+.slider img {
+	width: 100%;
+}
+.slider img {
+	width: 100%;
+}
+</style>
+<div class = "maindiv">
+<div class="slider">
+<img src="img/1.jpg">	
+</div>
+<div class="slider">
+<img src="img/2.jpg">	
+</div>	
+<div class="slider">
+<img src="img/3.jpg">	
+</div>	
+</div>
+<div>
+<button onclick="slideshow(pic-1)">prev</button>
+<button onclick="slideshow(0)">1</button>
+<button onclick="slideshow(1)">2</button>
+<button onclick="slideshow(2)">3</button>
+<button onclick="slideshow(pic+1)">next</button>	
+</div>	
+<script>
+var pic = 0;	
+slideshow(pic);
+
+
+
+function slideshow(image) {
+	 var s = document.getElementsByClassName('slider');
+	 if (image <= 0) {
+	 image = 0;
+}
+	 for (var i = 0; i < s.length; i++) {
+	 s[i].style= "display:none";
+     s[image].style = "display:block;";
+      pic = image;
+}
+}	
+
+</script>
+</body>
+</html>	
