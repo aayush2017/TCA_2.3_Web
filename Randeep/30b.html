@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+	<style>
+		.a{width: 100%}
+		.a img{width: 100%}
+		.b{width: 33%}
+	</style>
+</head>
+<body>
+	<div class="b">
+<div class="a">
+	<img src="C:/Users/Randeep/Desktop/TCA_2.3_Web/Notes/27.1.20/img/4.jpg">
+</div>
+<div class="a">
+	<img src="C:/Users/Randeep/Desktop/TCA_2.3_Web/Notes/27.1.20/img/5.jpg">
+</div>
+<div class="a">
+	<img src="C:/Users/Randeep/Desktop/TCA_2.3_Web/Notes/27.1.20/img/7.jpg">
+</div>
+<button onclick="moveslider(imgPos-1)">pre</button>
+<button onclick="moveslider(1)">1</button>
+<button onclick="moveslider(2)">2</button>
+<button onclick="moveslider(3)">3</button>
+<button onclick="moveslider(imgPos+1)">Next</button>
+</div>
+<script>
+	var imgPos = 1;
+	moveslider(imgPos);
+
+	function moveslider(imgNum) {
+		var si = document.getElementsByClassName('a');
+		if (imgNum>si.length) {
+			alert("no image on right");
+		}
+		if (imgNum<=0) {alert("no image on left");
+		imgNum = 1;
+	}
+
+	for (var i = 0; i <= si.length; i++) {
+		si[i].style = "display: none";
+		si[imgNum-1].style = "display: block";
+		imgPos = imgNum;
+}}
+</script>
+</body>
+</html>
