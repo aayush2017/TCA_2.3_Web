@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable</title>
+</head>
+<body>
+<label>Username <input type="text" id="unm"></label>
+<label>Password <input type="password" name="" id="psd"></label>
+<label>Skill</label> <label>Photoshop <input type="checkbox" name="" id="p1" value="Photoshop"></label> 
+<label>Illustrator <input type="checkbox" name="" id="i1"></label>
+<button onclick="checkLogin()">Login</button>
+<script>
+function checkLogin() {
+	var unm, psd;
+	unm = document.getElementById('unm');
+	psd = document.getElementById('psd');
+	var p1 = document.getElementById('p1');
+	// alert(unm.value + psd.value);
+	alert(p1.value);
+}
+</script>
+</body>
+</html>
