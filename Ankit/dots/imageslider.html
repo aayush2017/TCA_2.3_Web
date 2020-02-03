@@ -4,18 +4,15 @@
 	<meta charset="UTF-8">
 	<title>image slider</title>
 <style type="text/css">
-.img-container{
- width: 33.33%;
-	margin: 0 auto;
-	position: relative;
+.img-container {
+   width: 33.33%;
+   margin: 0 auto;
+   position: relative;
 }
-.slider{
- 
-}
-.slider img{
-width: 100%;	
+.slider img {
+   width: 100%;	
 }	
-.prev ,.next{
+.prev, .next {
 	border: none;
 	background-color: rgba(0,0,0,0);
 	position: absolute;
@@ -23,47 +20,37 @@ width: 100%;
 	color: white;
 	padding: 12px;
 }
-.next{
-	right: 0;
+.next { right: 0; }
+.prev:hover, .next:hover {	background-color: rgba(0,0,0,.5); }
+.dot {
+   height: 15px;
+   width: 4px;	
+   border: none;
+   border-radius: 50%;
+   background: rgba(0,0,0,.3);
 }
-.prev:hover,.next:hover{
-	background-color: rgba(0,0,0,.5)
-}
-.dot{
-height: 15px;
-width: 4px;	
-border:none;
-border-radius: 50%;
-background: rgba(0,0,0,.3);
-}
-.active{
-background-color: rgba(0,0,0,.6);	
-}
-.dot:hover{
-background-color: rgba(0,0,0,.6);	
-}
+.active { background-color: rgba(0,0,0,.6); }
+.dot:hover { background-color: rgba(0,0,0,.6); }
 </style>	
 </head>
 <body>
 <div class="img-container">
-<div class="slider">
-<img src="img/1.jpg">	
-</div>
-<div class="img container">
-<div class="slider">
-<img src="img/2.jpg">	
-</div>
-<div class="img container">
-<div class="slider">
-<img src="img/3.jpg">	
-</div>
-<button class="prev" onclick="change(-1)" >&#10094;</button>
-<button class="next" onclick="change(+1)" >&#10095;</button>	
-</div>
-<div style="text-align: center;">
-<button class="dot" onclick="current(0)">&nbsp;</button>
-<button class="dot" onclick="current(1)">&nbsp;</button>
-<button class="dot" onclick="current(2)">&nbsp;</button>
+   <div class="slider">
+      <img src="img/1.jpg">	
+   </div>
+   <div class="slider">
+      <img src="img/2.jpg">	
+   </div>
+   <div class="slider">
+      <img src="img/3.jpg">	
+   </div>
+   <button class="prev" onclick="change(-1)" >&#10094;</button>
+   <button class="next" onclick="change(+1)" >&#10095;</button>	
+   <div style="text-align: center;">
+      <button class="dot" onclick="current(0)">&nbsp;</button>
+      <button class="dot" onclick="current(1)">&nbsp;</button>
+      <button class="dot" onclick="current(2)">&nbsp;</button>
+   </div>
 </div>
 <script type="text/javascript">
 var pic = 0;	
@@ -80,20 +67,20 @@ function slide(img) {
    var i;
    var s = document.getElementsByClassName('slider');
    var d = document.getElementsByClassName('dot');
-   if (img > 2) {
+
+   if (img > s.length-1) {
    	pic = 0;
    }
    if (img < 0) {
-   	pic = 2;
+   	pic = s.length-1;
    }
+
    for (i = 0 ; i < s.length ; i++) {
       s[i].style.display = "none";
-      s[pic].style.display = "block";  
+      d[i].classList.remove("active");
    }
-   for (i = 0 ; i < d.length ; i++) {
-   	  d[i].className = d[i].className.replace(" active"," dot")
-      d[pic].className += " active";   
-  }
+   s[pic].style.display = "block";  
+   d[pic].className += " active";
 }
 </script>
 </body>
