@@ -1,0 +1,19 @@
+.textColorRed {
+	color: red;
+}
+.bgColorBlack { background-color: black; }
+h2 u {
+	color: green;
+}
+body > u {
+	color: red;
+	text-decoration: overline;
+}
+input[type="text"] {
+	color: blue;
+	font-size: 25px;
+}
+button[type="submit"] {
+	color: blue;
+	font-size: 25px;
+}

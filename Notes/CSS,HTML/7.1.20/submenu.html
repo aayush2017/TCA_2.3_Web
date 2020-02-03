@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#strip {
+	background-color: black;
+	overflow: hidden;
+	color: #fff;
+	padding-top: 1%;
+}
+.mltr { margin-left: 10%; margin-right: 10%; }
+#logo { float: left; width: 10%;}
+#menu { float: right; width: 37%;}
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu ul li {
+	display: inline-block;
+	margin-right: 5%;
+	padding: 2%;
+	transition: all .3s;
+}
+#menu ul li:hover {
+	background-color: green;
+}
+#menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+}
+#menu ul ul {
+
+	display: none;
+	position: absolute;
+	background: black;
+	width: 10%;
+	margin-left: -8px;
+	margin-top: 8px;
+}
+#menu ul ul li {
+	
+	display: block;
+	padding: 5%;
+}
+#menu ul li:hover > ul {
+	display: block;
+}
+#menu ul ul ul {
+	display: none;
+	position: absolute;
+	margin-left: 95%;
+	background: black;
+	width: 100%;
+	margin-top: -18%;
+}
+
+
+</style>
+</head>
+<body>
+<div id="strip">
+	<div class="mltr">
+		<div id="logo">
+			<h2>Logo</h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="">Home</a>
+					<ul>
+						<li><a href="">List1</a>
+							<ul>
+								<li><a href="">List1</a></li>
+								<li><a href="">List2</a>
+									<ul>
+										<li><a href="">List1</a></li>
+										<li><a href="">List2</a></li>
+										<li><a href="">List3</a></li>
+										<li><a href="">List4</a></li>
+									</ul>
+								</li>
+								<li><a href="">List3</a></li>
+								<li><a href="">List4</a></li>
+							</ul>
+						</li>
+						<li><a href="">List2</a></li>
+						<li><a href="">List3</a></li>
+						<li><a href="">List4</a></li>
+					</ul>
+				</li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Services</a>
+					<ul>
+						<li><a href="">List1</a>
+							<ul>
+								<li><a href="">List1</a></li>
+								<li><a href="">List2</a></li>
+								<li><a href="">List3</a></li>
+								<li><a href="">List4</a></li>
+							</ul>
+						</li>
+						<li><a href="">List2</a></li>
+						<li><a href="">List3</a></li>
+						<li><a href="">List4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

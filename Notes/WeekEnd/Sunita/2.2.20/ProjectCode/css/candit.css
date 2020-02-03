@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	background-image: url("../img/1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 436px;
+}
+#header-title {
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 12%;
+	padding-bottom: 5%;
+	color: #fff;
+}
+#header-menu {
+
+	background-color: rgba(0,0,0,.5);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#leftToRight {
+
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#leftToRight a {
+	
+	text-decoration: navajowhite;
+	color: #fff;
+	margin-right: 2%;
+}
