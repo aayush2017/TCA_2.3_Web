@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Model</title>
+</head>
+<body>
+<label>Fullname <input type="text" name="" maxlength="10" id="fnm"></label>
+<label>Password <input type="text" name="" pattern="[A-Z 0-9]{6,10}"></label>
+<label>Password <input type="password" name="" 
+	pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"></label>
+<button onclick="abc()">OK</button>
+<script>
+function abc() {
+	var regx = "[A-Z 0-9]{6,10}";
+	var fnm = document.getElementById('fnm');
+	if (fnm.value.search(regx) == -1) {
+		alert("Error");
+	}
+}
+</script>
+</body>
+</html>

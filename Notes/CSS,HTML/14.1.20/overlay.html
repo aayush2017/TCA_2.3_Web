@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OverLay</title>
+<style>
+
+
+
+.box {
+	width: 33%;
+	position: relative;
+}
+.box:hover .box-text {
+	opacity: 1;
+}
+.box img { width: 100%; }
+.box .box-text {
+
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	transition: all .3s;
+	opacity: 0;
+}
+.box .box-text h2 {
+	text-align: center;
+	margin-top: 17%;
+}
+.box .box-text p {
+	width: 52%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="box">
+	<img src="img/1.jpg" alt="1">
+	<div class="box-text">
+		<h2>Heading</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</div>
+</body>
+</html>

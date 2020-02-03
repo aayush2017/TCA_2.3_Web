@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+<style>
+.bg_text {
+	background-color: pink;
+	color: brown;
+	border-left: 5px solid black;
+}
+</style>
+</head>
+<body>
+<label>Fullname <input type="text" name="" id="fullnm1"></label>
+<label>Username <input type="text" name="" id="username"></label>
+<button onclick="validateBox()">Submit</button>
+
+<script>
+function validateBox() {
+	var fullnm2 = document.getElementById('fullnm1');
+	var username = document.getElementById('username');
+	if (fullnm2.value == "" ) {
+		alert("Please enter Fullname");
+		fullnm2.focus();
+		fullnm2.className = "bg_text";
+	} else 	if (username.value == "" ) {
+		alert("Please enter username");
+		username.focus();
+		username.className = "bg_text";
+	}
+}
+</script>
+</body>
+</html>
