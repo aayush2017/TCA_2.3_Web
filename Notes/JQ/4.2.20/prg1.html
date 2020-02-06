@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Sample</title>
+</head>
+<body>
+<label>A <input type="text" id="a" ></label>
+<label>B <input type="text" id="b" ></label>
+<button id="b1">Add</button>
+<button id="b1">Minus</button>
+<h1>Hello World</h1>
+<p><a href="">Hello</a>  <a href="">World</a></p>
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#b1").click(function(){ 
+		var a,b,c;
+		a = $("#a").val();
+		b = $("#b").val();
+		c = parseInt(a) / parseInt(b);
+		alert(c); 
+	});
+});
+
+$("h1").click(function(){
+	alert();
+});
+
+
+</script>
+</body>
+</html>
