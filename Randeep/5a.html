@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+</head>
+<body>
+	<label>First number<input type="text" name="" id="fnm"></label>
+	<label>Second number<input type="text" name="" id="snm"></label>
+	<button id="a">Addition</button>
+	<button id="b">Subtraction</button>
+	<button id="c">Multiplication</button>
+	<button id="d">Division</button>
+
+<script src="Jquery.js"></script>
+<script >
+	$(document).ready(function(){
+		$("#a").click(function(){
+			var a,b,c;
+			a = $("#fnm").val();
+			b = $("#snm").val();
+			c = parseInt(a) + parseInt(b);
+			alert(c);
+		});
+
+		$("#b").click(function(){
+			var a,b,c;
+			a = $("#fnm").val();
+			b = $("#snm").val();
+			c = parseInt(a) - parseInt(b);
+			alert(c);
+		});
+		$("#c").click(function(){
+			var a,b,c;
+			a = $("#fnm").val();
+			b = $("#snm").val();
+			c = parseInt(a) * parseInt(b);
+			alert(c);
+		});
+		$("#d").click(function(){
+			var a,b,c;
+			a = $("#fnm").val();
+			b = $("#snm").val();
+			c = parseInt(a) / parseInt(b);
+			alert(c);
+		});
+	})
+
+
+
+
+</script>
+
+</body>
+</html>
