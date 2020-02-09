@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	background-image: url("../img/1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 436px;
+	position: relative;
+}
+#header-title {
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 12%;
+	padding-bottom: 5%;
+	color: #fff;
+}
+#header-menu {
+	background-color: rgba(0,0,0,.5);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#leftToRight {
+
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#leftToRight a {
+	text-decoration: navajowhite;
+	color: #fff;
+	margin-right: 2%;
+}
+#eget {
+	clear: both;
+	overflow: hidden;
+}
+.eget-box {
+	clear: both;
+	overflow: hidden;
+}
+.eget-box img { width: 100%; margin-bottom: -4px; }
+.eget-box-60 {
+	width: 62.6%;
+	color: #fff;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.eget-box-40 {
+	width: 37.4%;
+	color: #fff;
+	position: relative;
+	float: left;
+}
+.eget-box-text {
+	text-align: center;
+	width: 50%;
+	position: absolute;
+	top: 37%;
+	left: 24%;
+}
+.eget-box-text h2 {}
+.eget-box-text hr { margin: 5% 0 5% 0; }
+.eget-box-text p {}
+.eget-box-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bg-greenLight { background-color: rgba(38, 134, 75, 0.5); }
+.bg-black {	background-color: rgba(0, 0, 0, 0.5); }
