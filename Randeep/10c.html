@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ani</title>
+<style>
+	.d1 {
+		background-color: red;
+		padding: 1%;
+		height: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: all .3s;
+	}
+	.fixednav { position: fixed; height: 30px; }
+</style>
+</head>
+<body>
+
+<div class="d1"></div>
+<img src="img/1.jpg" alt="1.jpg">
+<p>em ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<img src="img/2.jpg" alt="2.jpg">
+<p>em ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<img src="img/3.jpg" alt="4.jpg">
+<p>em ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+
+<img src="img/4.jpg" alt="4.jpg">
+<p>em ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() >= 100) {
+				$(".d1").addClass("fixednav");
+			} else {
+				$(".d1").removeClass("fixednav");
+			}
+		});
+	});
+	
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
