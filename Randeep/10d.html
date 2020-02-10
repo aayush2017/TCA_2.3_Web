@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ani</title>
+</head>
+<body>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fadeout">Fadeout</button>
+<button id="slideup">Slideup</button>
+<button id="slidedown">Slidedown</button>
+<button id="fadein">Fadein</button>
+<button id="toggle">Toggle</button>
+<button id="animate">Animate</button>
+
+<p style="border: 1px solid red; overflow: hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+			$("#show").click(function(){
+				$("p").show();
+			});
+			$("#fadeout").click(function(){
+					$("p").fadeOut();
+				});
+				$("#fadein").click(function(){
+						$("p").fadeIn();
+					});
+					$("#slideup").ready(function(){
+						$("p").slideUp();
+					});
+					$("#toggle").click(function(){
+						$("p").slideToggle(100,function(){
+							alert();
+						});
+					});
+				
+			$("#animate").click(function(){
+				$("p").animate({
+					"width": "10%",
+					"height": "10px"
+				}, 300, function() {
+					alert();
+				});
+				});
+			});
+		
+
+
+
+	
+
+</script>
+
+
+
+</body>
+</html>
