@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+
+<style>
+	#form {
+		width: 25%;
+		position: fixed;
+		bottom: -9%;
+		right: 1%;
+		transition: all .3s;
+	}
+
+	#form button{}
+	.showform {
+		bottom: 2% !important;
+	}
+
+</style>
+</head>
+
+<body>
+<div id="form">
+	<button id="sub">Subscribe</button>
+<fieldset>
+	<legend>Subscribe</legend>
+	<label>Email ID<input type="text" name=""></label>
+<button>Submit</button>
+</fieldset>
+</div>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#sub").click(function(){
+			$("#form").toggleClass("showform");
+		});
+	});
+</script>
+
+
+
+
+
+</body>
+</html>
