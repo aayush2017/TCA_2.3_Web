@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>image slider</title>
+	<title>image sld</title>
 <style type="text/css">
 .img-container {
    width: 33.33%;
@@ -57,11 +57,11 @@ var pic = 0;
 slide(pic);
 
 function change(img) {
-   slide(pic += img); 
+    slide(pic += img); 
 }
 function current(img) {
- 	slide(pic = img);
- } 
+ 	 slide(pic = img);
+} 
 
 function slide(img) {
    var i;
@@ -77,7 +77,7 @@ function slide(img) {
 
    for (i = 0 ; i < s.length ; i++) {
       s[i].style.display = "none";
-      d[i].classList.remove("active");
+      d[i].classList.replace("active","dot");
    }
    s[pic].style.display = "block";  
    d[pic].className += " active";
