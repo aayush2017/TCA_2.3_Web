@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jquery</title>
+</head>
+<body>
+<form>
+<fieldset>
+<legend style="font-size: 30px">car info</legend>
+<h1>brand</h1><input type="text" name="" id="bd">
+<br><br>	
+<h1>model</h1><input type="text" name="" id="md">
+<br><br>
+<h1>color</h1><input type="text" name="" id="cl">
+<br><br>
+<button onclick="abc()">submit</button>
+</fieldset>	
+</form>	
+<h1 id="demo" style="border: 2px solid gray"></h1>
+<script>
+function abc() {		
+var car = {
+  brand: document.getElementById('bd').value ,  
+  model: document.getElementById('md').value ,  
+  color: document.getElementById('cl').value ,  	
+};
+var x;
+var txt = "";
+for (x in car) {
+txt += x + " : " + car[x]  + "<br />" ;	 
+document.getElementById('demo').innerHTML = txt ;
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.maindiv{
+	width: 80%;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.slider img {
+	
+	height: 700px;
+	width: 100%;
+}
+.slider img {
+	height: 700px;
+	width: 100%;
+}
+.slider img {
+	height: 700px;
+	width: 100%;
+}
+.prev{
+	padding: 29px;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	border: none;
+  left: 0px;
+	top :300px;
+	color:white;
+}
+.next{
+		padding: 29px;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	border: none;
+  right: 0px;
+	top :300px;
+	color:white;
+}
+.next:hover {
+	background-color: rgba(0,0,0,.5)
+}
+.prev:hover {
+	background-color: rgba(0,0,0,.5)
+}
+.b{
+	width: 8%;
+	margin: 0 auto;
+}
+.dot{
+	border: none;
+	background-color: rgba(0,0,0,.3);
+	border-radius: 50%;
+	
+}
+.active{
+	background-color: rgba(0,0,0,.6);
+}
+.dot:hover{
+	background-color: rgba(0,0,0,.6);	
+}
