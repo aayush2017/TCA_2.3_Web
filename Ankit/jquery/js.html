@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jquery</title>
+<style type="text/css">
+#div1 {
+	margin: 0px 20px;
+	padding: 10px 50px;
+	border: 1px solid black;
+	width: 4%;
+	background: powderblue;
+}
+#div2 {
+	border: 1px solid;
+	margin: 0px 20px;
+	width: 4%;
+	padding: 49px 50px;
+	background-color: powderblue;
+	display: none;
+}
+#div3{
+  border: 1px solid black;
+  height: 100px;
+  width: 10%;
+  background-color: powderblue;	
+}
+#div4{
+    margin: 0px 20px;
+	padding: 10px 50px;
+	border: 1px solid black;
+	width: 4%;
+	background: powderblue;
+}
+#div5{
+	border: 1px solid;
+	margin: 0px 20px;
+	width: 4%;
+	padding: 49px 50px;
+	background-color: powderblue;
+	display: none;
+}
+	
+
+</style>
+</head>
+<body>
+<button id="toggle">hide/show</button>
+  <p id="demo">hello ! how are you ?</p>
+<input type="text" name="" id="txt">
+<br><br>  
+<button id="fadetog">fadetoggle</button>
+<h1 id="hdng">Hello World</h1>
+<br>
+<div id="div1">click me</div>
+<div id="div2">hello world</div>
+<br>
+<button id="anm">animate</button>
+<div id="div3">
+hello world
+</div>
+<br>
+<button id ="stop">stop</button>
+<br>
+<div id="div4">click me</div>
+<div id="div5">hello world</div>
+<script src="jquery.min.js"></script> 
+<script> 
+$(document).ready(function () {
+
+ $("#toggle").click(function () {
+   $("#demo").toggle();
+ });
+ $("#demo").on({
+ mousedown : function () {
+  $("#demo").css('background-color','powderblue');
+ },
+ mouseup : function () {
+  $("#demo").css('background-color','white');
+  }
+ });
+ $("#txt").on({
+ focus : function () {
+  $("#txt").css('background-color','powderblue');
+ },
+ blur : function () {
+  $("#txt").css('background-color','white');
+ }
+ });
+ $("#fadetog").click(function () {
+  $("#hdng").fadeToggle("slow");
+ });
+ $("#div1").click(function () {
+  $("#div2").slideToggle("slow",function () {
+  	alert("this is slide toogle effect");
+  });
+ });
+ $("#anm").click(function () {
+  var dv = $("#div3");
+  dv.animate({height: '500px'});
+  dv.animate({width: '80%'});
+  dv.animate({height: '100px'});
+  dv.animate({width: '10%'});
+  dv.animate({fontSize: '40px'});
+ });
+  $("#div4").click(function () {
+  $("#div5").css({"background-color": "red","font-size":"25px"}).slideDown("slow").slideUp("fast");
+ });
+  $("#stop").click(function () {
+  	$("#div5").stop(false,true);
+  });
+});
+</script>
+</body>
+</html>
