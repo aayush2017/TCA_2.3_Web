@@ -1,0 +1,4 @@
+FTP Username: sunita@sunita.galaxeepro.com
+FTP server: ftp.galaxeepro.com
+FTP & explicit FTPS port:  21
+FTP Password: Sp123456@2020
