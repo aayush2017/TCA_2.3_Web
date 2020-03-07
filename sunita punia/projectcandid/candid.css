@@ -29,13 +29,15 @@ header{
 	width: 100%;
 }
 .leftToRight {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
-#header-menu a {
+#header-menu a{
+
+	text-decoration: navajowhite;
 	color: #fff;
-	margin-right: 2%; 
-	text-decoration: none;
+	margin-right: 2%;
+	margin-left: 0.5%;
 }
 #eget {
 	clear: both;
@@ -82,19 +84,16 @@ header{
 #about {
 	overflow: hidden;
 	clear: both;
-	margin-top: 3%;
 }
 .about-text {
-
-	width: 50%;
-	float: left;
-	margin-left: 5%;
-	text-align: justify;
+width: 50%;
+float: left;
+margin-left: 5%;
+text-align: justify;
 }
 .about-img {
-
-	width: 45%;
-	float: left;
+width: 45%;
+float: left;
 }
 .about-img img {
 	width: 100%

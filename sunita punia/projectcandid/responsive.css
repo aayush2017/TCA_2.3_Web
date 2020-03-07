@@ -1,4 +1,7 @@
-@media only screen and (max-width: 460px) {
-	.about-img { width: 100%; }
+@media only screen and (max-width: 460px) { 
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
 	.about-text { width: 100%; }
+
 }
