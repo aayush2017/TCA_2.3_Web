@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Effect</title>
+<style>
+.box-img {
+	width: 50%;
+	position: relative;
+	box-shadow: 1px 1px 4px 5px #4ac81c;
+	overflow: hidden;
+}
+.box-img img {
+	width: 100%;
+	margin-bottom: -4px;
+}
+.box-text {
+	position: absolute;
+	top: 0%;
+	left: -100%;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	transition: all .3s;
+}
+.box-text h1 {}
+.box-text p {}
+.box-img:hover .box-text {
+	left: 0%;
+}
+</style>
+</head>
+<body>
+<div class="box-img">
+	<img src="1.jpg" alt="1.jpg" />
+	<div class="box-text">
+		<h1>Heading 1</h1>
+		<p>Text Goes here</p>
+	</div>
+</div>
+</body>
+</html>
