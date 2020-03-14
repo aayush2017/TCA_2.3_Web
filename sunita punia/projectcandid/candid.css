@@ -99,27 +99,31 @@ float: left;
 .about-img img {
 	width: 100%
 }
+#main-gallery {
+
+	clear: both;
+	overflow: hidden;
+	padding: 0 5% 0 5%;
+}
 .gallery h1{ font-style: italic;
-font- color: rgba(38,134,75,0.5); }
+color: rgba(38,134,75,0.5); }
 .gallery {
-	margin-left: 3%;
-	margin-right:3%;
 	
+	width: 50%;
+	float: left;
 }
 #gallery-text{
-	display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-}
-.mini gallery{
-	width: 62.6%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	width: 108%;
+	height: 100%;
+	text-align: center;
+	padding-top: 31%;
 	color: #fff;
-	position: relative;
-	float: left;
-	overflow: hidden;
 }
+.gallery-50 {width: 92%;position: relative;}
+.gallery-50 img {width: 108%;}
+.gallery-25 {width: 100%;}
+.gallery-25 img {width: 49%;}
