@@ -1,16 +1,65 @@
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
-	header { height: 305px; }
-	.eget-box-text {
-		width: 100%;
-		top: 32%;
-		left: 0%;
-	}
-	.eget-box-text h1 {
-		font-size: 1.5em;
-	}
+/* @media only screen and (max-width: 460px) { 
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; } */
+
+/* Custom,iphone retina */
+@media only screen and (max-width: 320px) {
 	.eget-box-60 {width: 100%; }
 	.eget-box-40 {width: 100%; }
 	.about-img {width: 100%; }
 	.about-text { width: 100%; }
+
+}
+ /* mobile 360 */
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
+}
+/* extra small device, phones */
+@media only screen and (min-width: 361px) and (max-width: 420px) {
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
+}
+@media only screen and (min-width: 421px) and (max-width: 480px){
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 620px){
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
+}
+@media only screen and (min-width: 621px) and (max-width: 786px){
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
+}
+@media only screen and (min-width: 993px) and (max-width: 1024px){
+	.eget-box-60 {width: 100%; }
+	.eget-box-40 {width: 100%; }
+	.about-img {width: 100%; }
+	.about-text { width: 100%; }
+
 }
